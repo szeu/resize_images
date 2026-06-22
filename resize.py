@@ -3,7 +3,7 @@ from PIL import Image
 
 def resize_and_pad_image(target_size=(500, 500)):
     # 取得指令碼所在的資料夾路徑
-    folder_path = os.path.dirname(os.path.abspath(__file__))
+    folder_path = os.getcwd()
     
     # 支援的圖片格式
     valid_extensions = ('.jpg', '.jpeg', '.png', '.bmp', '.webp', '.tiff')
